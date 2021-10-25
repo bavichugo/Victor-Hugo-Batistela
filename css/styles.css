@@ -129,7 +129,8 @@ header {
 }
 
 .projects .btn-youtube,
-.projects .btn-xcalc {
+.projects .btn-xcalc,
+.projects .btn-starbucks {
   color: white;
   text-decoration: none;
   padding: 8px;
@@ -143,6 +144,10 @@ header {
 
 .projects .btn-xcalc {
   background: blue;
+}
+
+.projects .btn-starbucks {
+  background: #26644a;
 }
 
 .projects .btn:hover {

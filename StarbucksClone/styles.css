@@ -1,0 +1,118 @@
+body {
+  margin: 0; /* By default body has a margin */
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+/* ------------------------------- NAVIGATION BAR -------------------------------*/
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: black;
+}
+
+header {
+  height: 101px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%),
+    0 0 2px rgb(0 0 0 / 7%);
+  position: relative; /* Makes the box shadow appear on top of the other div */
+}
+
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%; /* 101px from header */
+  display: flex;
+  justify-content: space-between; /* Adds space between the left and right nav */
+}
+
+.logo {
+  height: 51px;
+  width: 51px;
+}
+
+.logo img {
+  height: 100%; /* 51px from .logo class */
+}
+
+.left-nav {
+  display: flex;
+  height: 100%; /* 101px from .header-container */
+  align-items: center;
+}
+
+.left-nav nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.left-nav nav ul li {
+  text-transform: uppercase;
+  padding-left: 24px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.left-nav nav ul li:hover {
+  color: #00754a;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.find-store {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  font-weight: bold;
+}
+
+.find-store:hover {
+  color: #00754a;
+  cursor: pointer;
+}
+
+.find-store i {
+  padding-right: 8px;
+  font-size: 24px;
+}
+
+/* Apllying the same button style to both Sign in and Join now */
+.sign-in,
+.join-now {
+  padding: 7px 16px; /* 7px 16px - top/bottom and left/right */
+  border: 1px solid;
+  border-radius: 50px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-right: 16px;
+}
+
+.sign-in:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  transition: all 0.2s ease; /* Makes the button become large and change color slowly */
+}
+
+.join-now {
+  background-color: black;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+.join-now:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+}
+
+/* ------------------------------- NAVIGATION BAR -------------------------------*/
