@@ -1,156 +1,532 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.png">
     <title>Victor Hugo Batistela</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/1defe48735.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
-    <link rel="icon" href="/images/icon.png">
   </head>
   <body>
-    <main>
-      <!-- ***********************  ABOUT / PROFILE  *********************** -->
-      <header>
-        <div class="content-wrap">
-          <h1>Victor Hugo Batistela</h1>
-          <h2>Computer Science Student</h2>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+      <div class="container">
+        <a href="#" class="navbar-brand">Victor Hugo Batistela</a>
 
-          <p>High achieving Computer Science student always looking forward to learning the newest technologies and programming skills. Seeking to increase my software engineer skills as a SWE intern.</p>
-        </div>
-      </header>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-      <section class="education">
-        <div class="content-wrap item-details">
-          <h2>Education</h2>
-
-          <!-- Copy this whole <section> block to add more schools. -->
-          <section>
-            <h3>Georgia Institute of Technology - Atlanta, GA</h3>
-            <p>Bachelor of Science in Computer Science - 2021 to 2023 (expected)</p>
-            <p>GPA: In Progress</p>
-          </section>
-
-          <section>
-            <h3>Miami Dade Honors College - Miami, FL</h3>
-            <p>Associate of Arts in Computer Science - 2019 to 2021</p>
-            <p>GPA: 3.96</p>
-          </section>
-        </div>
-        <!-- End of School block. -->
-      </section>
-
-      <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-      <section class="projects">
-        <div class="content-wrap divider">
-          <h2>Projects</h2>
-          <p>The following are my personal projects! I am currently working on creating a YouTube channel where I teach the fundamentals of programming as well as advanced topics such as Object-Oriented Programming and Algorithms and Data Structures.</p>
-
-          <!-- Project 1 -->
-          <section class="project-item">
-            <img src="images/YouTube-Icon-Full-Color-Logo.svg" alt="youtube logo">
-            <h3>Master Programmer - Content Creator</h3>
-            <p>Taught the fundamental of programming using Python, topics included variables, data types, conditionals, loops, string manipulation, lists, sets, dictionaries, and others.</p>
-            <p>Created videos in Portuguese in an attempt to share high-quality Computer Science educational content for Brazilians and other Portuguese-speaking cultures.</p>
-            <a class="btn-youtube" href="https://www.youtube.com/channel/UCGmeWkS4Fp88YSFEeCbbuvA" target="_blank">Subscribe!</a>
-          </section>
-          <!-- End of Project 1 -->
-
-          <!-- Project 2 -->
-          <section class="project-item">
-            <img src="images/starbucks-logo-png-transparent.png" alt="starbucks logo">
-            <h3>Starbucks Clone</h3>
-            <p>Developed a clone of Starbucks landing page using HTML and CSS. Unfortunately, the app is not mobile-friendly; hence it is better to check it out on a computer. Nevertheless, if you are interested in seeing it, click on the link below.</p>
-            <a class="btn-starbucks" href="./starbucks.html" target="_blank">Check it out</a>
-          </section>
-          <!-- End of Project 2 -->
-
-          <!-- Project 3 -->
-          <section class="project-item">
-            <img src="images/xCalc-icon.png" alt="xCalc app logo">
-            <h3>Android App Development - xCalc</h3>
-            <p>Designed and programmed xCalc using Java and Android Studio, a mathematical platform available in more than 152 
-              countries, where students can study advanced Calculus problems.</p>
-            <p>Developed xCalc with the assistance of two Math professors.</p>
-            <a class="btn-xcalc" href="https://play.google.com/store/apps/details?id=com.bavichugo.xcalc" target="_blank">Download</a>
-          </section>
-          <!-- End of Project 3 -->
-
-        <!-- End of Project block. -->
-        </div>
-      </section>
-
-      <!-- ********************  EXTRACURRICULAR ACTIVITIES  ********************* -->
-
-      <section class="extracurricular-activities">
-        <div class="content-wrap divider">
-          <h2>Extracurricular Activities</h2>
-
-          <!-- Extracurricular 1 -->
-          <section class="project-item">
-            <img src="images/mdc-logo.png" alt="robotics club logo">
-            <h3>Vice-President, Robotics Club</h3>
-            <p>Miami Dade Honors College - 2020 to 2021</p>
-            <p>Founded the first artificial intelligence laboratory at Miami Dade College with a 90,000-dollar MDC’s fund.</p>
-            <p>Taught one-hour python programming sessions to 15 club members.</p>
-          </section>
-          <!-- End of Extracurricular 1 -->
-
-          <!-- Extracurricular 2 -->
-          <section class="project-item">
-            <img src="images/feeding-south-florida-logo.png" alt="robotics club logo">
-            <h3>Volunteer Leader, Feeding South Florida</h3>
-            <p>Bezerra de Menezes Spiritist Center - 2018 to 2021</p>
-            <p>Coordinated 10 – 15 volunteers to perform various tasks at the Feeding South Florida pantry, from the assembly of food boxes to the delivery to the families.</p>
-            <p>Assisted 200+ hungry families monthly with the delivery of food boxes.</p>
-          </section>
-          <!-- End of Extracurricular 2 -->
-
-        <!-- End of Project block. -->
-        </div>
-      </section>
-
-      <!-- ***********************  WORK EXPERIENCE  *********************** -->
-      <section class="work-experience">
-        <div class="content-wrap item-details divider">
-          <h2>Work Experience</h2>
-          <p>Currently working towards a Software Engineer internship!</p>
-
-          <!-- Job 1 -->
-          <section class="job-item">
-            <div class="job-details">
-              <h3>Student Assistant</h3>
-              <p>Miami Dade College</p>
-              <p>January 2020 to September 2020</p>
-            </div>
-            <div class="job-summary">
-                <p>Developed a macro that automated the registration process of 600 new students at Miami Dade College’s system.</p>
-                <p>Worked remotely during the pandemic assisting prospective students with college applications.</p>
-            </div>
-          </section>
-        <!-- End of Job 1 -->
-        </div>
-      </section>
-
-      <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-      <footer>
-        <div class="content-wrap">
-          <h2>Let's Keep in Touch!</h2>
-
-          <!-- Social media and contact links. Add or remove any networks. -->
-          <ul class="contact-list">
-            <li><a href="mailto:victorhugobatistela@gmail.com"><i class="fas fa-envelope"></i></a></li>
-            <li><a href="https://www.instagram.com/victorbatistela/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/victorbatistela/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#education" class="nav-link">Education</a>
+            </li>
+            <li class="nav-item">
+                <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#activities" class="nav-link">Activities</a>
+            </li>
+            <li class="nav-item">
+                <a href="#experience" class="nav-link">Experience</a>
+            </li>
+            <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+            </li>
           </ul>
         </div>
-      </footer>
-    </main>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section
+      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Hello Everyone!</h1>
+            <p class="lead my-4">
+                My name is Victor Hugo Batistela, and this is my portfolio! I was born in São Paulo, Brazil, 
+                and moved to the United States in 2017. I currently study Computer Science at the Georgia 
+                Institute of Technology and am looking for opportunities in the Software Developer world. 
+                I am passionate about traveling, experiencing new adventures, and I am always down to play 
+                some Volleyball! 
+            </p>
+          </div>
+          <img
+            class="img-fluid w-50 mb-5 mx-5 d-none d-sm-block rounded"
+            src="images/meSmiling.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxes -->
+    <!-- <section class="p-5">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-laptop"></i>
+                </div>
+                <h3 class="card-title mb-3">Virtual</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-secondary text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-person-square"></i>
+                </div>
+                <h3 class="card-title mb-3">Hybrid</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#" class="btn btn-dark">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card bg-dark text-light">
+              <div class="card-body text-center">
+                <div class="h1 mb-3">
+                  <i class="bi bi-people"></i>
+                </div>
+                <h3 class="card-title mb-3">In Person</h3>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Iure, quas quidem possimus dolorum esse eligendi?
+                </p>
+                <a href="#" class="btn btn-primary">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Learn Sections -->
+    <h1 id="education" class="display-1 text-center bg-primary text-dark p-5">Education</h1>
+    <section id="education" class="p-5 text-dark">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="images/gtbee.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Georgia Institute of Technology</h2>
+            <p class="lead">
+              Bachelor of Science in Computer Science - 2021 to 2023 (expected)
+            </p>
+            <p>
+              GPA: In Progress
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="p-5 text-dark">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-md">
+            <img src="images/mdcsharkslogo.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col-md p-5">
+            <h2>Miami Dade Honors College</h2>
+            <p class="lead">
+              Associate of Arts in Computer Science - 2019 to 2021
+            </p>
+            <p>
+              GPA: 3.96
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question Accordion -->
+    <section id="education" class="p-5">
+      <div class="container">
+        <h2 class="text-center mb-4">Courses Taken</h2>
+        <div class="accordion accordion-flush" id="education">
+
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-one"
+              >
+                CS1331 - Introduction to Object Oriented Programming
+              </button>
+            </h2>
+            <div
+              id="question-one"
+              class="accordion-collapse collapse"
+              data-bs-parent="#education"
+            >
+              <div class="accordion-body">
+                Introduction to the techniques and methods of object-oriented programming such as encapsulation, 
+                inheritance, and polymorphism. Emphasis on software development and individual programming skills.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-two"
+              >
+                CS 4400 - Introduction to Database Systems 
+              </button>
+            </h2>
+            <div
+              id="question-two"
+              class="accordion-collapse collapse"
+              data-bs-parent="#education"
+            >
+              <div class="accordion-body">
+                Comprehensive coverage of mainstream database concepts such as the entity-relationship model, 
+                relational databases, query languages, and database design methodology. Includes a project.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-three"
+              >
+                CS 2050 - Introduction to Discrete Mathematics for Computer Science
+              </button>
+            </h2>
+            <div
+              id="question-three"
+              class="accordion-collapse collapse"
+              data-bs-parent="#education"
+            >
+              <div class="accordion-body">
+                Proof methods, strategy, correctness of algorithms over discrete structures. 
+                Induction and recursion. Complexity and order of growth. Number theoretic principles 
+                and algorithms. Counting and computability.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-four"
+              >
+                (Spring 2022) CS 1332 - Data Structures and Algorithms for Applications 
+              </button>
+            </h2>
+            <div
+              id="question-four"
+              class="accordion-collapse collapse"
+              data-bs-parent="#education"
+            >
+              <div class="accordion-body">
+                Computer data structures and algorithms in the context of object-oriented 
+                programming. Focus on software development towards applications.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-five"
+              >
+                (Spring 2022) CS 2340 - Objects and Design
+              </button>
+            </h2>
+            <div
+              id="question-five"
+              class="accordion-collapse collapse"
+              data-bs-parent="#education"
+            >
+              <div class="accordion-body">
+                Object-oriented programming methods for dealing with large programs. Focus on 
+                quality processes, effective debugging techniques, and testing to assure a quality 
+                product.
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 6 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-six"
+              >
+                (Spring 2022) CS 2110 - Computer Organization and Programming 
+              </button>
+            </h2>
+            <div
+              id="question-six"
+              class="accordion-collapse collapse"
+              data-bs-parent="#education"
+            >
+              <div class="accordion-body">
+                An introduction to basic computer hardware, machine language, assembly language, and C programming.
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 7 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#question-seven"
+              >
+                (Spring 2022) CS 4365 - Introduction to Enterprise Computing 
+              </button>
+            </h2>
+            <div
+              id="question-seven"
+              class="accordion-collapse collapse"
+              data-bs-parent="#education"
+            >
+              <div class="accordion-body">
+                 A survey of basic software tools and techniques used in mission-critical
+                 systems and applications, combined with in-depth study of fundamental 
+                 principles underlying enterprise computing.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <h1 id="projects" class="display-1 text-center bg-primary p-5">Projects</h1>
+    <section id="projects" class="p-5">
+      <div class="container">
+        <p class="h5 text-center text-dark mb-5">
+            The following are my personal projects! I am currently working on creating a YouTube channel 
+            where I teach the fundamentals of programming as well as advanced topics such as Object-Oriented 
+            Programming and Algorithms and Data Structures.
+        </p>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light shadow">
+              <div class="card-body text-center">
+                <h1 class="diplay-1" style="font-size: 80px;"><i class="bi bi-youtube text-danger mx-1"></i></h1>
+
+                <h3 class="card-title">Content Creator</h3>
+                <h4 class="card-title mb-3">Master Programmer</h4>
+                <p class="card-text">
+                    Taught the fundamental of programming using Python, topics included variables, data types, conditionals, loops, string manipulation, lists, sets, dictionaries, and others.
+                </p>
+                <p class="card-text">
+                    Created videos in Portuguese in an attempt to share high-quality Computer Science educational content for Brazilians and other Portuguese-speaking cultures.
+                </p>
+                <a href="https://www.youtube.com/channel/UCGmeWkS4Fp88YSFEeCbbuvA" class="btn btn-danger" target="_blank">Subscribe!</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light shadow">
+              <div class="card-body text-center">
+                <div>
+                    <img
+                  src="images/starbucks-logo-png-transparent.png"
+                  class="mx-auto mt-4 img-fluid card-img-top mb-3"
+                  alt=""
+                />
+                </div>
+                <h3 class="card-title mb-3">Starbucks Clone</h3>
+                <p class="card-text">
+                    Developed a clone of Starbucks landing page using HTML and CSS. 
+                    Unfortunately, the app is not mobile-friendly. If you are interested 
+                    in seeing it out, click in the Starbucks Logo.
+                </p>
+                <a href="starbucks.html" class="btn btn-success" target="_blank">Check it out</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card bg-light shadow">
+              <div class="card-body text-center">
+                <div>
+                    <img
+                  src="images/xCalc-icon.png"
+                  class="rounded-circle shadow-sm mx-auto mt-4 img-fluid card-img-top mb-3"
+                  alt=""
+                />
+                </div>
+                <h3 class="card-title">Android App Developer</h3>
+                <h4 class="card-title mb-3">xCalc</h4>
+                <p class="card-text">
+                    Designed and programmed xCalc using Java and Android Studio, a mathematical platform available in more than 152 countries, where students can study advanced Calculus problems.
+                </p>
+                <p class="card-text">
+                    Developed xCalc with the assistance of two Math professors.
+                </p>
+                <a href="https://play.google.com/store/apps/details?id=com.bavichugo.xcalc" class="btn btn-primary" target="_blank">Download</a>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+<!-- ---------- Activities ---------- -->
+<h1 id="activities" class="display-1 text-center p-5 bg-primary">Activities</h1>
+<section id="activities" class="p-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md">
+        <img src="images/mdcsharks.jpg" class="img-fluid" alt="" />
+      </div>
+      <div class="col-md p-5">
+        <h2>Vice-President, Robotics Club</h2>
+        <p class="lead">
+          Miami Dade Honors College - 2020 to 2021
+        </p>
+        <p>
+          Founded the first artificial intelligence laboratory at Miami Dade College with a 90,000-dollar MDC’s fund.
+        </p>
+        <p>
+          Taught one-hour python programming sessions to 15 club members.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="activities" class="p-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md">
+        <img src="images/feeding-south-florida-logo.png" class="img-fluid feeding-south-florida-img" alt="" />
+      </div>
+      <div class="col-md p-5">
+        <h2>Volunteer Leader, Feeding South Florida</h2>
+        <p class="lead">
+          Bezerra de Menezes Spiritist Center - 2018 to 2021
+        </p>
+        <p>
+          Coordinated 10 – 15 volunteers to perform various tasks at the Feeding South Florida pantry, from the assembly of food boxes to the delivery to the families.        </p>
+        <p>
+          Assisted 200+ hungry families monthly with the delivery of food boxes.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ---------- EXPERIENCE ---------- -->
+<h1 id="activities" class="display-1 text-center p-5 bg-primary">Experience</h1>
+<section id="experience" class="p-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-md">
+        <img src="images/mdcsharks.jpg" class="img-fluid" alt="" />
+      </div>
+      <div class="col-md p-5">
+        <h2>Student Assistant</h2>
+        <p class="lead">
+          Miami Dade College - 2020 
+        </p>
+        <p>
+          Developed a macro that automated the registration process of 600 new students at Miami Dade College’s system.        </p>
+        <p>
+          Worked remotely during the pandemic assisting prospective students with college applications.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact -->
+    <section class="p-2 bg-dark" id="contact">
+      <div class="container text-center bg text-light">
+        <h2 class="text-center my-3">Contact Info</h2>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="mailto:victorhugobatistela@gmail.com"><i class="bi bi-envelope-fill text-muted mx-2 h2"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/in/victorbatistela/" target="_blank"><i class="bi bi-linkedin text-muted mx-2 h2"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.instagram.com/victorbatistela/" target="_blank"><i class="bi bi-instagram text-muted mx-2 h2"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/bavichugo" target="_blank"><i class="bi bi-github text-muted mx-2 h2"></i></a></li>
+        </ul>
+      </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="p-2 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p>Copyright &copy; 2021 Victor Hugo Batistela</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

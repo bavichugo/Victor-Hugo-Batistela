@@ -1,0 +1,21 @@
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .nexw-input {
+    width: 50%;
+  }
+}
+
+.card-img-top {
+  display: block;
+  max-width: 30%;
+  height: auto;
+}
+
+.feeding-south-florida-img {
+  width: 67%;
+}
